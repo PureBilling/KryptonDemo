@@ -1,6 +1,6 @@
 demo:
   image: php:5.6-apache
   ports:
-    - "0.0.0.0:5050:80"
+    - "0.0.0.0:5066:80"
   volumes:
     - "./www:/var/www/html/"
