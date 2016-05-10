@@ -4,7 +4,7 @@ include_once('../helper.php');
 $request = [];
 $request["amount"] = 990;
 $request["currency"] = 'EUR';
-$result = getJson('Charge/Capture', $request);
+$result = getJson('Charge/CreatePayment', $request);
 
 
 $formToken = $result['answer']['formToken'];
@@ -53,16 +53,7 @@ $comment =  "New form token genrated: " . $formToken. "<br><br>";
         <!-- Expiration month -->
         <div class="row">
             <div class="col s3 icon-container"><i class="zmdi zmdi-calendar"></i></div>
-            <div class="col s7 kr-expiry-month" kr-style='{"input":{"border":"0px","border-bottom":"1px solid #ccc"}}'>
-
-            </div>
-            <div class="col s2">&nbsp;</div>
-        </div>
-
-        <!-- Expiration year -->
-        <div class="row">
-            <div class="col s3 icon-container"><i class="zmdi zmdi-calendar"></i></div>
-            <div class="col s7 kr-expiry-year" kr-style='{"input":{"border":"0px","border-bottom":"1px solid #ccc"}}'>
+            <div class="col s7 kr-expiry" kr-style='{"input":{"border":"0px","border-bottom":"1px solid #ccc"}}'>
 
             </div>
             <div class="col s2">&nbsp;</div>
@@ -80,7 +71,7 @@ $comment =  "New form token genrated: " . $formToken. "<br><br>";
         <div class="row">
             <div class="col s3">&nbsp;</div>
             <div class="col s6 valign-wrapper center-align">
-                <button type="submit" class="btn kr-payment-button waves-effect waves-light">Pay</button>
+                <button type="submit" class="btn kr-payment-button waves-effect waves-light">pagar</button>
             </div>
             <div class="col s3">&nbsp;</div>
 

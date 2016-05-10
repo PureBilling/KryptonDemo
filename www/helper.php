@@ -4,7 +4,8 @@ function getJson($ws, $data)
 {
     $data_string = json_encode($data);
 
-    $ch = curl_init('https://payzen-q09.lyra-labs.fr/pbproxy/V3/' . $ws);
+    $url = 'https://payzen-q09.lyra-labs.fr/api-payment/V3/' . $ws;
+    $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
