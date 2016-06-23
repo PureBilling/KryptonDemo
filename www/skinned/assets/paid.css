@@ -1,8 +1,14 @@
-body {
-    background-color: #efefef;
+h2 p a {
+    color: #353535;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+p {
+    color: #353535;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
     color: #353535;
     font-family: 'Montserrat', sans-serif;
 }

@@ -16,7 +16,6 @@ echo "<p>New form token genrated: " . $formToken. "</p>";
 <script src="https://krypton.purebilling.io/V3/stable/kr.debug.js?formToken=<?php echo $formToken?>"
         kr-public-key="demo:testpublickey_DEMOPUBLICKEY95me92597fd28tGD4r5"
         kr-post-url="/paid.php"
-        kr-theme="icons-1"
         kr-language="es"
 ></script>
 
