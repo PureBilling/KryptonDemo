@@ -22,9 +22,10 @@ if (!empty($_POST)) {
 
     $request = [];
     $request["id"] = $billingId;
+
     $result = getJson('Charge/Get', $request);
 
-    if ($result['answer']['status'] == 'paid') {
+    if ($result['answer']['status'] == 'PAID') {
         print "<h2>Transaction has been paid !!</h2>";
     }
 
